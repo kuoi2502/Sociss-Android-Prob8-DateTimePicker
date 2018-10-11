@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.demo.sociss_datepicker_timepicker.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Quản lí công việc hàng tuần"
+        android:textColor="#ffffff"
+        android:background="#208f33"
+         />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="Công việc"
+                />
+            <EditText
+                android:id="@+id/edit_cong_viec"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Nội dung"
+                />
+            <EditText
+                android:id="@+id/edit_noi_dung"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                />
+        </TableRow>
+        <TableRow android:weightSum="3">
+            <TextView
+                android:text="Ngày HT"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="11/10/2018"
+                />
+            <Button
+                android:id="@+id/btn_date"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Date"
+                android:textAllCaps="false"
+                />
+        </TableRow>
+        <TableRow android:weightSum="3">
+            <TextView
+                android:text="Giờ HT"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="8:30:PM"
+                />
+            <Button
+                android:id="@+id/btn_time"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Time"
+                android:textAllCaps="false"
+                />
+        </TableRow>
+        <TextView
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:background="#208f33"
+            />
+        <Button
+            android:id="@+id/btn_them_con_viec"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Thêm công việc"
+            android:textAllCaps="false"
+            />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Danh sách công việc"
+            android:background="#208f33"
+            />
+        <ListView
+            android:id="@+id/lv_cong_viec"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            ></ListView>
+    </TableLayout>
+
+</LinearLayout>
